@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+     <button onclick="
+        cost = cost+4;
+        console.log(`increse +4: ${cost}`);
+        ">+4</button>
+
+     <button onclick="
+     cost+=5;
+     console.log(`add a 5: $${cost}`)
+     ">+5</button>
+
+     <button onclick="
+     cost-=1;
+     console.log(`decress 1: $${cost}`);
+     ">-1</button>
+
+     <button onclick="
+     cost-=2;
+     console.log(`decres 2:$${cost}`);
+     ">-2</button>
+
+     <button onclick="
+     cost-=3;
+     console.log(`decrise 3:$${cost}`);
+     ">-3</button>
+
+     <button onclick="
+     cost = 0;
+     console.log(`reset all: $${cost}`)
+     ">reset</button>
+    </body>
+    <script>
+        let cost = (5+2*3+9);
+        console.log(`total cost:${cost}`);
+        let  tax = cost * 0.1;
+     console.log(`total cost with tax: $${tax + cost}`);
+    </script>
+</html>
